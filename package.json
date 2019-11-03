@@ -1,0 +1,22 @@
+{
+  "name": "node-sandbox",
+  "version": "1.0.0",
+  "description": "Simple Node Sandbox",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- ./src/index.js localhost 8080"
+  },
+  "dependencies": {
+    "hapi": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4",
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/node": "latest",
+    "@babel/preset-env": "latest"
+  },
+  "babel": {
+    "presets": ["@babel/preset-env"]
+  }
+}
